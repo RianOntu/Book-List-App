@@ -1,6 +1,8 @@
 import React,{Component} from 'react';
 import BookList from './listofbook/lists';
-import books from '../booklist/booklist'
+import books from '../booklist/booklist';
+import NewBook from './representational/NewBook';
+
 
 
 
@@ -59,13 +61,19 @@ class MainComponent extends Component{
     
     
     return (
+
+     
       <div className="App">
-       
-        < h1>Hello !</h1>
+       <ul className="nav-bar">
+         <li><a href="/">Home</a></li>
+         <li><a href="/new">Enter New Book</a></li>
+       </ul>
+
+        < h1>Book List</h1>
         <button className="toggle" onClick={this.toggleBooks}>Toggle Books</button><br></br>
      
     {books}
-    
+    <NewBook />
       
         
       </div>

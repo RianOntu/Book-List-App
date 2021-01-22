@@ -17,6 +17,7 @@ class Person extends Component{
     super(props);
   }
   render(){
+    
   return (
     <div className="box">
              <h1 onClick={this.props.delete}>name:{this.props.Book_Name} and Writer:{this.props.Writer}</h1>
